@@ -500,7 +500,6 @@ body{
     display: flex;
     position: relative;
     z-index:200;
-
 }
 .introduceTab .tab-menu li a{
     width:50px;
@@ -513,17 +512,36 @@ body{
     font-weight: 900;
     -webkit-text-fill-color:#fff;
     -webkit-text-stroke: 1px #000000;
-    background: #fff;
     margin-right: 2vw;
     cursor:pointer;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
 }
 .introduceTab .tab-menu li a.active{
-    background: #000;
+    background-color: #000;
 }
-.introduceTab .tab-menu li a img{
-    width:auto;
-    height:23px;
+.introduceTab .tab-menu li:nth-child(1) a{
+    background-image: url(../img/1.svg);
 }
+.introduceTab .tab-menu li:nth-child(2) a{
+    background-image: url(../img/2.svg);
+}
+.introduceTab .tab-menu li:nth-child(3) a{
+    background-image: url(../img/3.svg);
+}
+.introduceTab .tab-menu li:nth-child(4) a{
+    background-image: url(../img/4.svg);
+}
+.introduceTab .tab-menu li:nth-child(5) a{
+    background-image: url(../img/5.svg);
+}
+.introduceTab .tab-menu li:nth-child(6) a{
+    background-image: url(../img/6.svg);
+}
+
+
 .introduceTab .tab-content > div{
     display: none;
 }
