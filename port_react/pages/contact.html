@@ -89,8 +89,10 @@
                 </ul>
             </nav>
             <div class="header-ham">
-                <div class="ham">
-                    <span class="bar"></span>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
             </div>
         </header>
@@ -118,22 +120,22 @@
                 </div>
 
                 <div class="floating-form">
+                    <button id="hide-menu">
+                        <i class="bx bxs-x-circle"></i>
+                    </button>
                     <div class="contact-form">
                         <form class="form">
-                            <button id="hide-menu">
-                                <i class="bx bxs-x-circle"></i>
-                            </button>
+                            
                             <h4 class="contact-tit">Contact Me</h4>
-                            <!-- <p class="contact-subtit">
-                                Whether you’re looking for answers, would to want to let me know how i did, you’ll find
-                                many ways to contact me right here.
-                            </p> -->
+                            <p class="contact-subtit">
+                                If you would like to join me, please contact me!
+                            </p>
                             <div class="input-group">
                                 <input type="email" id="email" placeholder="your email" required>
                                 <label for="email">your email</label>
                             </div>
                             <div class="input-group">
-                                <textarea id="message" rows="8" placeholder="your message"></textarea>
+                                <textarea id="message" rows="6" placeholder="your message"></textarea>
                                 <label for="message">your message</label>
                             </div>
                             <button type="submit" id="send-btn">send</button>
