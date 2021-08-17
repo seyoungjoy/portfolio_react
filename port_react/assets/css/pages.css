@@ -772,7 +772,6 @@ input[type=search]{
 .row1 li .cont .tit span:nth-child(2){
     font-size: 15px;
     flex:0 0 50%; 
-    /* font-family: 'GmarketSansTTFMedium'; */
 }
 
 /* ct */
