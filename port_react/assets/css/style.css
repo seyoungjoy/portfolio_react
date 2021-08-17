@@ -272,9 +272,9 @@ body{
     transition-timing-function:cubic-bezier(0.7, 0, 0.3, 1);
 }
 .nav-ellipse:hover svg path{
-    stroke-dashoffset: 0;
-    transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
-    transition-duration: 1s;
+        stroke-dashoffset: 0;
+        transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+        transition-duration: 1s;
 }
 #header nav li a{
    padding:1vw 2.5vw;
