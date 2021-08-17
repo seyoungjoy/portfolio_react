@@ -276,42 +276,30 @@ body{
     transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
     transition-duration: 1s;
 }
-
 #header nav li a{
    padding:1vw 2.5vw;
    position: relative;
    z-index: 10;
 }
 .header-ham{
-    display: none;
+    display:none;
 }
-.ham{
-    padding:10px;
+.burger{
+    cursor:pointer;
+    padding:0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
-    
 }
-.ham::before,
-.ham::after{
-    content:"";
-    display: block;
+.burger div{
     width:26px;
     height:2px;
-    background: #fff;
+    background-color: #fff;
+    margin:3px 0;
 }
-.ham .bar{
-    display: block;
+.burger div:nth-child(2){
     width:41px;
-    height:2px;
-    background: #fff;
-    margin:5px 0;
 }
-
-
-
-
 
 
 /* MainScreen */
@@ -861,10 +849,64 @@ body{
         height: 81px;
     }
     #header nav{
-        display: none;
+        position: absolute;
+        left:0;
+        top:0;
+        height:100vh;
+        background-color: #141414;
+        width:100%;
+        transform: translateX(-100%);
+        z-index:100;  
+        padding-top:20%;
     }
+    #header .nav-active{
+        transform: translateX(0);
+        transition: transform 0.5s ease-out;
+    }
+    #header nav ul{
+        flex-direction: column;
+    }
+    #header nav ul li{
+        opacity: 0;
+        text-align: center;
+        padding:2vh 0;
+    }
+    #header nav li a{
+        color:#fff;
+        font-family: 'Cocogoose';
+        font-size: 50px;
+     }
+     .nav-ellipse svg{
+        height:100px;
+     }
     .header-ham{
-        display: block;
+        position: relative;
+        z-index: 200;
+        display:block;
+    }
+    .burger div{
+        background: #fff;
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1)
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toggle .line1{
+        transform:rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity:0;
+    }
+    .toggle .line3{
+        transform:rotate(45deg) translate(-5px,-6px);
     }
     #header h1 p {
         font-size: 22px;
