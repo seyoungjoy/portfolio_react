@@ -595,6 +595,7 @@ body{
 .notice{
     color:#555;
     text-decoration: underline;
+    margin-top:1.5vh;
 }
 
 /* 메인 스토리 */
