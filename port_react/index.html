@@ -174,7 +174,8 @@
                                     ※ 본 사이트는 리액트로 다시 제작중입니다. 기대해주세요 :)
 
                                 </p>
-                                <p><a href="pages/contact.html" class="fontCoco">CONTACT YOUNG</a>
+                                <p>
+                                    <a href="pages/contact.html" class="fontCoco">CONTACT YOUNG</a>
                                 </p>
                             </div>
                             <div class="introduceTab">
@@ -442,6 +443,8 @@
                 tl.to(".introduce p:nth-child(4)", { opacity: 1, y: 0, duration: 0.5, ease: "ease.out" }, "-=0.32");
                 tl.to(".introduce p:nth-child(5)", { opacity: 1, y: 0, duration: 0.5, ease: "ease.out" }, "-=0.32");
                 tl.to(".introduce p:nth-child(6)", { opacity: 1, y: 0, duration: 0.5, ease: "ease.out" }, "-=0.32");
+                tl.to(".introduce p:last-child", { opacity: 1, y: 0, duration: 0.5, ease: "ease.out" }, "-=0.32");
+                
             };
             //main-story 애니메이션
             if (scroll >= $(".main-story").offset().top - $(window).height() * 0.7) {
