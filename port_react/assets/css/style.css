@@ -462,9 +462,9 @@ body{
 .introduce p:last-child{
     margin-top:3vh;
     font-size: 2vw;
-    text-decoration: underline;
     opacity: 0;    
     transform: translateY(50px);
+    font-family: 'GmarketSansTTFMedium';
     
 }
 .introduceTab{
@@ -614,6 +614,7 @@ body{
     color:#fff;
     line-height: 0.8;
     position: relative;
+    z-index: 100;
 }
 .story-line{
     display: block;
@@ -639,6 +640,8 @@ body{
     opacity: 0;
     transform: translateY(-100px);
     cursor:none;
+    position: relative;
+    z-index: 10;
 }
 .swiper-wrapper{
     margin-top:-20px;
