@@ -6,7 +6,7 @@ window.onload = function () {
     };
     start();
 
-    function pageClick() {;
+    function pageClick() {
         document.querySelectorAll(".page__click").forEach((elem) => {
             elem.addEventListener("click", (e) => {
                 e.preventDefault();
